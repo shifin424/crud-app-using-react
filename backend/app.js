@@ -5,16 +5,18 @@ import cors from 'cors'
 import connectDB from './config/config.js'
 import UserRouter from './routes/UserRoutes.js'
 import AdminRouter from './routes/AdminRouter.js'
+import morgan from 'morgan'
 
 const app = express()
 
 dotenv.config()
 connectDB()
 
-
+app.use(morgan('dev'))
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
+app.use(express.static('public'))
 
 
 

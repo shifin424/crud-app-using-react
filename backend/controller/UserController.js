@@ -105,3 +105,16 @@ if(UserData){
     }
 
 }
+
+
+export const uploadImage= async(req,res)=>{
+try{
+console.log(req.body,1);
+const {image} = req.body
+console.log(image,2);
+
+}catch(err){
+    console.log(err.message)
+}
+
+}

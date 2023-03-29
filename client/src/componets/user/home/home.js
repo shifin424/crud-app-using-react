@@ -5,6 +5,7 @@ import { Navbar, Nav, Button } from "react-bootstrap";
 import { useSelector } from 'react-redux';
 import { removetoken } from '../../../Redux/token/token';
 import { useNavigate } from "react-router-dom";
+import Profile from '../profile/Profile';
 import './home.css'
 
 
@@ -51,13 +52,10 @@ useEffect(() => {
 </Navbar>
       </header>
 
+      <div> <Profile/> </div>
 
 <section>
 
-<div className="d-flex justify-content-center align-items-center" style={{height:500}}>
-<h1 >Welcome to Home page</h1>
-
-</div>
 
 </section>
 
